@@ -1,0 +1,128 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background: #a00c01;
+
+}
+
+.contenido.show-nav .circulo {
+    transform: rotate(-70deg);
+}
+
+.menuCirculo {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circulo {
+    background-color: #a00c012a;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: fixed;
+    transition: transform 0.5s linear; 
+}
+
+.circulo:hover {
+    background-color: #a00c01;
+
+}
+
+.circulo button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+
+
+.circulo button#abrir {
+    left: 60%;
+}
+
+.circulo button#cerrar {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+nav {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    z-index: -1;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+}
+
+.contenido {
+    background-color: #f1f1f1;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    padding: 5%;
+}
+
+.contenido.show-nav {
+    transform: rotate(-20deg);
+}
+
+.articulo h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em auto;
+}
+
+.articulo h3 {
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+.articulo p{
+    color: #333;
+    line-height: 1.5;
+    margin: 1em auto;
+    text-align: justify;
+}
+
+.articulo img{
+    max-width: 50vw;
+}
